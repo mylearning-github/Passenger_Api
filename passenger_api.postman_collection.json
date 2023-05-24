@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "2b00238d-698d-40d9-a66d-c311a3b08161",
+		"name": "passenger_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6896774"
+	},
+	"item": [
+		{
+			"name": "savePassenger",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"passengerSurName\": \"jami\",\r\n    \"passengerName\": \"Sanjay kumar\",\r\n    \"passengerAge\": 50,\r\n    \"passengerGender\": \"Male\",\r\n    \"mobileNumber\": \"1234567890\",\r\n    \"passengerAddress\": {\r\n        \"flatNo\": 1 ,\r\n        \"streetName\":\"Basi reddy petta\",\r\n\t    \"landMark\": \"Opposite to ganesh temple\",\r\n\t    \"pincode\": \"539970\",  \r\n\t    \"city\": \"Kuthukulluru\", \r\n\t    \"state\": \"Andhra Pradesh\",\r\n\t    \"country\": \"India\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/passenger",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"passenger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "savePassengers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"passengerSurName\": \"jami\",\r\n    \"passengerName\": \"Naresh\",\r\n    \"passengerAge\": \"18\",\r\n    \"passengerGender\": \"Male\",\r\n    \"mobileNumber\": \"123456\",\r\n    \"passengerAddress\": {\r\n        \"flatNo\": 1 ,\r\n        \"streetName\":\"Basi reddy petta\",\r\n\t    \"landMark\": \"Opposite to ganesh temple\",\r\n\t    \"pincode\": \"539970\",  \r\n\t    \"city\": \"Kuthukulluru\", \r\n\t    \"state\": \"Andhra Pradesh\",\r\n\t    \"country\": \"India\"\r\n    }\r\n},\r\n{\r\n    \"passengerSurName\": \"jami\",\r\n    \"passengerName\": \"Gopi\",\r\n    \"passengerAge\": 14,\r\n    \"passengerGender\": \"Male\",\r\n    \"mobileNumber\": \"123456\",\r\n    \"passengerAddress\": {\r\n        \"flatNo\": 1 ,\r\n        \"streetName\":\"Basi reddy petta\",\r\n\t    \"landMark\": \"Opposite to ganesh temple\",\r\n\t    \"pincode\": \"539970\",  \r\n\t    \"city\": \"Kuthukulluru\", \r\n\t    \"state\": \"Andhra Pradesh\",\r\n\t    \"country\": \"India\"\r\n    }\r\n},\r\n{\r\n    \"passengerSurName\": \"jami\",\r\n    \"passengerName\": \"Sanjay kumar\",\r\n    \"passengerAge\": 14,\r\n    \"passengerGender\": \"Male\",\r\n    \"mobileNumber\": \"123456\",\r\n    \"passengerAddress\": {\r\n        \"flatNo\": 1 ,\r\n        \"streetName\":\"Basi reddy petta\",\r\n\t    \"landMark\": \"Opposite to ganesh temple\",\r\n\t    \"pincode\": \"539970\",  \r\n\t    \"city\": \"Kuthukulluru\", \r\n\t    \"state\": \"Andhra Pradesh\",\r\n\t    \"country\": \"India\"\r\n    }\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/passengers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"passengers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPassengers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/passengers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"passengers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPassengerById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/passengers/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"passengers",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAllPassengers",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/jami/deletejamipassenger/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"jami",
+						"deletejamipassenger",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePassengerById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/passengers/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"passengers",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePassenger",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"passengerId\": 15,\r\n    \"passengerSurName\": \"Gotipalli\",\r\n    \"passengerName\": \"Gopi\",\r\n    \"passengerAge\": 40,\r\n    \"passengerGender\": \"Male\",\r\n    \"mobileNumber\": \"123456\",\r\n    \"passengerAddress\": {\r\n        \"addressId\": 16,\r\n        \"flatNo\": 1,\r\n        \"streetName\": \"Basi reddy petta\",\r\n        \"landMark\": \"Opposite to ganesh temple\",\r\n        \"pincode\": \"539970\",\r\n        \"city\": \"Kuthukulluru\",\r\n        \"state\": \"Andhra Pradesh\",\r\n        \"country\": \"India\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/passengers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"passengers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
